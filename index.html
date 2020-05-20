@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <!--Import materialize.css-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <form class="col s12" id="formulario">
+                    <h4 class="header2">Pesquisar usuários</h4>
+                    <div class="row">
+                        <div class="input-field col s10">
+                            <i class="mdi-action-account-circle prefix"></i>
+                            <input
+                                id="inputUser"
+                                type="text"
+                                class="validate"
+                                name="action"
+                            />
+                            <label for="inputUser">Buscar</label>
+                        </div>
+
+                        <div class="input-field col s2">
+                            <div class="input-field col s12">
+                                <button
+                                    id="btnSubmit"
+                                    class="btn cyan waves-effect waves-light"
+                                    type="submit"
+                                    name="action"
+                                >
+                                    <i class="mdi-action-lock-open"></i>
+                                    Buscar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div id="users" class="card-panel col s8">
+                    <h5 id="titleUser"></h5>
+                </div>
+                <div id="usersStatistic" class="card-panel col s4">
+                    <h5 id="titleStatistc"></h5>
+                </div>
+            </div>
+        </div>
+        <!--JavaScript at end of body for optimized loading-->
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
